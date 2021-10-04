@@ -1,0 +1,180 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  overflow: hidden;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-areas: "header" "main" "footer";
+  font-family: Arial, "Arial Arial Helvetica lvetica", sans-serif;
+  grid-template-rows: minmax(auto, 1fr) auto minmax(auto, 1fr);
+}
+
+.header {
+  display: grid;
+  background-color: black;
+  grid-template: 1fr/minmax(auto, 100px) minmax(auto, 500px) minmax(auto, 300px) minmax(auto, 500px) 1fr;
+  padding: 15px;
+  grid-area: header;
+}
+.header img {
+  width: 70px;
+  height: 70px;
+}
+.header .header__logo {
+  display: grid;
+}
+.header .header__menu {
+  display: grid;
+}
+.header .header__list {
+  display: grid;
+  grid-auto-flow: column;
+  list-style: none;
+  align-self: center;
+}
+.header .header__link {
+  text-decoration: none;
+  color: white;
+}
+
+.right_side {
+  display: grid;
+}
+.right_side .content {
+  align-self: center;
+}
+.right_side .content input {
+  padding: 5px;
+  margin-right: 10px;
+  width: 250px;
+  border-radius: 5px;
+  border: 1px solid black;
+  opacity: 0.5;
+}
+.right_side .content a {
+  margin-right: 5px;
+  text-decoration: none;
+  color: white;
+}
+.right_side .content .up {
+  padding: 5px;
+  border: 1px solid white;
+  border-radius: 3px;
+}
+
+.main {
+  display: grid;
+  grid-area: main;
+  background-color: black;
+}
+.main .main__content {
+  justify-self: center;
+  align-self: center;
+  padding: 20px;
+  display: flex;
+  margin: 0 -50px;
+}
+.main .main__content .main__menu {
+  display: grid;
+  width: 400px;
+  margin: 0 50px;
+  background-color: white;
+  border-radius: 3px;
+}
+
+.main__text {
+  align-self: center;
+}
+.main__text h1 {
+  font-size: 75px;
+  color: white;
+}
+.main__text p {
+  margin-top: 15px;
+  color: white;
+  text-align: justify;
+}
+
+.menu__content {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+}
+.menu__content .menu__input {
+  margin-bottom: 15px;
+}
+.menu__content input {
+  width: 350px;
+  padding: 12px 0 12px 7px;
+  border-radius: 5px;
+  margin-top: 5px;
+  border: 1px solid black;
+}
+.menu__content p {
+  text-align: justify;
+}
+.menu__content a {
+  text-decoration: none;
+}
+.menu__content .menu__consent {
+  flex: 1 1 auto;
+}
+.menu__content .main__button {
+  padding: 25px 0 25px 0;
+  width: 365px;
+  margin: 15px 0 15px 0;
+  border-radius: 5px;
+  color: white;
+  background-color: green;
+  border: 2px solid white;
+}
+
+.footer {
+  background-color: black;
+}
+
+nav ul ul {
+  display: none;
+  position: absolute;
+  background-color: white;
+  border-radius: 3px;
+  padding: 15px;
+}
+
+/* отображаем выпадающий список при наведении */
+nav ul li:hover > ul {
+  display: inherit;
+}
+
+/* первый уровень выпадающего списка */
+nav ul ul li {
+  min-width: 170px;
+  float: none;
+  display: list-item;
+  position: relative;
+  text-decoration: none;
+  list-style: none;
+  margin: 15px 0 8px 10px;
+}
+
+.under_header__list a {
+  text-decoration: none;
+  color: black;
+  font-size: 13px;
+}
+.under_header__list a:hover {
+  color: blue;
+}
+
+.under_header__list:last-child {
+  margin-bottom: 0;
+}
+
+/*# sourceMappingURL=second.css.map */

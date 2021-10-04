@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body, .wrapper{
+    height: 100%;
+    width: 100%;
+}
+.content{
+    width: 100%;
+    height: 85%;
+    background-color: red;
+}
+.main{
+    height: 100%;
+    float: left;
+    width: 80%;
+}
+.header{
+    width: 100%;
+    height: 20%;
+    background-color: brown;
+}
+.left{
+    height: 100%;
+    width: 60%;
+    float: left;
+}
+.top{
+    height: 40%;
+    width: 100%;
+}
+.first{
+    height: 100%;
+    width: 50%;
+    background-color: orangered;
+}
+.second{
+    height: 100%;
+    width: 50%;
+}
+.bottom{
+    height: 60%;
+    width: 100%;
+    background-color: lightgreen;
+}
+.right{
+    height: 100%;
+    float: right;
+    width: 40%;
+    background-color: yellow;
+}
+.storage{
+    width: 100%;
+    height: 80%;
+}
+.right_side{
+    float: right;
+    height: 100%;
+    width: 20%;
+    background-color: blue;
+}
+.footer{
+    width: 100%;
+    height: 15%;
+    background-color: hotpink;
+}
+@media (min-width: 992px) {
+    .wrapper{
+        width: 100%;
+        height: 100%;
+    }
+}
+@media (max-width: 992px) {
+    .wrapper{
+        width: 992px;
+        height: 100%;
+    }
+}
+@media (max-width: 868px) {
+    .wrapper{
+        width: 868px;
+        height: 100%;
+    }
+}
+@media (max-width: 772px) {
+    .wrapper{
+        width: 772px;
+        height: 100%;
+    }
+}
+@media (max-width: 650px) {
+    .wrapper{
+        width: 650px;
+        height: 100%;
+    }
+}

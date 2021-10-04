@@ -1,0 +1,35 @@
+
+.row div{
+  border: 1px solid gray;
+  text-align: center;
+}
+
+@media screen and (min-width: 1200px){
+  #left_part_head{
+    background-color: lightgoldenrodyellow;
+  }
+  #right_part_footer{
+    background-color: lightgoldenrodyellow;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px){
+  #right_part_head{
+    background-color: hotpink;
+  }
+  #content{
+    background-color: hotpink;
+  }
+  #left_part_footer{
+    background-color: hotpink;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+  #left_menu{
+    background-color: hotpink;
+  }
+  #right_menu{
+    background-color: hotpink;
+  }
+}
